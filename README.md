@@ -3,7 +3,7 @@
 For multiplayer ygopro servers that utilize alternative [`[gframe]`](https://github.com/Fluorohydride/ygopro) implementation that are specialized for server side use, and require [`[ygopro-core]`](https://github.com/Fluorohydride/ygopro-core) as an external library of some forum (`*.dll`, `*.lib`, `*.so`).
 
 ### Usage
-Open `build/ygo.sln` build the project, it will produce `bin\{target\ocgcore.dll` where `{target}` is your Release/Debug option. Its suggested you only build for `Win32` and not `x64`.
+`git submodule update --force` to pull in [`[ygopro-core]`](https://github.com/Fluorohydride/ygopro-core)'s latest source code. Open `build/ygo.sln`,  set the project to `Release`, build the project, (it will only work in release atm) it will produce `bin\release\ocgcore.dll`. Its suggested you only build for `Win32` and not `x64`. 
     
 ### Compatible Servers
  - [YGOSharp by @IceYGO](https://github.com/IceYGO/ygosharp)
